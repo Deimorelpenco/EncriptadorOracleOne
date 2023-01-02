@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css"> 
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <title>Encriptador</title>
+        <script src="codigo.js"></script>
+    </head>
+    <body>
+        <main class="main">
+            <div class="logo">
+                <img class="logo-img" src="imagen/logo.png" alt="logo">
+            </div>
+            <div class="entradas">
+                <textarea placeholder="Ingrese texto aquí" id="texto"></textarea>        
+                <p class="aviso"><img src="imagen/Vector.png"> Solo letras minúsculas y sin acentos</p>
+                <div class="botones">
+                    <input id="encriptar" type="button" onclick="encriptar()" value="Encriptar">
+                    <input id="desencriptar" type="button" onclick="desencriptar()" value="Desencriptar">
+                </div>
+            </div>
+            <div class="salidas">
+                <img id="muneco" src="imagen/Muneco.png">
+                <div>
+                    <p class="devuelve" style="display: none;" id="devuelve"> </p>
+                    <h2 id="h2">Ningún mensaje fue encontrado</h2>
+                    <p id="mensaje">Ingrese el texto que desees encriptar o desencriptar</p>
+                    <button class="copiar" style="display: none;" id="copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p class="copyright">&copy Copyright David Julián Morel Penco - 2023</p>
+        </footer>
+    </body>
+</html>
